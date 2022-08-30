@@ -1,0 +1,12 @@
+# 需要更改的位置: ./service/search.go
+
+driver:
+  name: chrome
+  place: ./driver/chromedriver
+
+page:
+  login: https://zjuam.zju.edu.cn/cas/login?service=http://jwbinfosys.zju.edu.cn/default2.aspx
+  search: http://jwbinfosys.zju.edu.cn/xscj.aspx?xh=
+
+port: 9515
+year: 2022
