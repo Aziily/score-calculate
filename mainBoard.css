@@ -1,0 +1,85 @@
+.mainBoard {
+    width: 20vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* margin-top: 10vh; */
+    margin-right: 40px;
+}
+
+.login {
+    width: 80%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -5%;
+}
+
+.inputBox {
+    width: 87.5%;
+    height: 15%;
+    margin: 6.25%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 600;
+
+    border: 0px solid white;
+    border: 3px solid rgba(255, 255, 255, 0.15);
+    background-color: transparent;
+    border-radius: 20px;
+
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.1) inset;
+    text-shadow: 0 1px 2px rgba(0,0,0,.1);
+}
+.inputBox:hover {
+    animation: overInput 1s ease;
+}
+@keyframes overInput {
+    0% {
+        border: 3px solid rgba(255,255,255,1);
+    }
+    100% {
+        border: 3px solid rgba(255,255,255,.15);
+    }
+}
+
+.btn-submit {
+    width: 60%;
+    height: 15%;
+    margin: 10%;
+
+    border-radius: 20px;
+    border: none;
+    color: gray;
+    text-align: center;
+    /* text-decoration: none; */
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 3px;
+
+    transition-duration: 0.4s;
+}
+.btn-submit:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.showAll {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: rgb(32, 30, 30);
+    text-shadow: 0 1px 2px rgba(0,0,0,.1);
+    font-size: 18px;
+    font-weight: 600;
+}

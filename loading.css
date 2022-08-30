@@ -1,0 +1,69 @@
+.cradle {
+    --uib-size: 50px;
+    --uib-color: rgb(32, 30, 30);
+    --uib-speed: 1.2s;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--uib-size);
+    height: var(--uib-size);
+}
+
+.dot {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transform-origin: center top;
+}
+
+.dot::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 12.5%;
+    border-radius: 50%;
+    background-color: var(--uib-color);
+}
+
+.dot:first-child {
+    animation: swing1 var(--uib-speed) linear infinite;
+}
+
+.dot:last-child {
+    animation: swing2 var(--uib-speed) linear infinite;
+}
+
+@keyframes swing1 {
+    0% {
+        transform: rotate(0deg);
+        animation-timing-function: ease-out;
+    }
+    25% {
+        transform: rotate(70deg);
+        animation-timing-function: ease-in;
+    }
+    50% {
+        transform: rotate(0deg);
+        animation-timing-function: linear;
+    }
+
+}
+
+@keyframes swing2 {
+    0% {
+        transform: rotate(0deg);
+        animation-timing-function: linear;
+    }
+    50% {
+        transform: rotate(0deg);
+        animation-timing-function: ease-out;
+    }
+    75% {
+        transform: rotate(-70deg);
+        animation-timing-function: ease-in;
+    }
+    
+}

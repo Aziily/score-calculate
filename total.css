@@ -1,0 +1,17 @@
+body {
+    background-image: radial-gradient(#F5E8C7, #ECCCB2, #DEB6AB, #AC7088);
+    font: 20px "Century Gothic", Futura, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    width: 100vw;
+    height: 100vh;
+
+    /* margin-top: -40vh;
+    margin-bottom: 10vh; */
+}
+
+#back {
+    transform: translateY(15vh);
+}
